@@ -40,7 +40,7 @@ class Graph extends Component<IProps, {}> {
     // x-axis records timestep
     elem.setAttribute('row-pivots', '["timestamp"]');
     // y-axis records top-ask-price of stock
-    elem.setAttribute('columns', '["top-ask-price"]');
+    elem.setAttribute('columns', '["top_ask_price"]');
     // treat 2 datapoints as unique when stock and timestamp are both unique
     // if 2 datapoints are duplicated, combine into one wiht averaged top_ask_price and top_bid_price
     elem.setAttribute('aggregates',
